@@ -9,12 +9,12 @@
 void _printstr(char *s)
 {
 
-if (*s == 0)
-	return;
+	if (*s == 0)
+		return;
 
-s++;
-_printstr(s);
-s--;
-_putchar(*s);
+	s++;
+	_printstr(s);
+	s--;
+	_putchar(*s);
 
 }
