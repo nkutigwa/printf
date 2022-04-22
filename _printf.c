@@ -1,8 +1,10 @@
 #include <stdarg.h>
 #include "main.h"
+
 /**
  * _printf - print any formated string
  * @format: string format
+ * 
  * Return: the number of characters printed
  */
 int _printf(const char *format, ...)
@@ -31,12 +33,14 @@ int _printf(const char *format, ...)
 	va_end(list);
 	return (printed);
 }
+
 /**
  * format_values - format string
  * @list: list of args
  * @format: format string
  * @printed: number of chars printed
  * @count: count iterator
+ * 
  * Return: pointer to func that correspond to operator
  */
 void format_values(va_list list, const char *format, int *printed, int *count)
@@ -82,10 +86,12 @@ void format_values(va_list list, const char *format, int *printed, int *count)
 	if (!f)
 		*count += 2;
 }
+
 /**
  * format_int - test number formats
  * @list: list of args
  * @printed: pointer to amount of printed chars
+ * 
  * Return: void
  */
 void format_int(va_list list, int *printed)
@@ -97,10 +103,12 @@ void format_int(va_list list, int *printed)
 	_printd(num);
 	*printed += _numlen(num);
 }
+
 /**
  * format_string - test string format
  * @list: list of args
  * @printed: pointer to amount of printed chars
+ * 
  * Return: void
  */
 void format_string(va_list list, int *printed, char sr)
