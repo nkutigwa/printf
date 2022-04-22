@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
- * _tobinoct - Converts an usigned int to binary.
- * @n: Passed number.
- * @m: counter.
+ * _tobinoct - Converts an usigned int to binary
+ * @n: Passed number
+ * @m: counter
  * @sys: system
  * Return: Returns a binary converted number.
 **/
