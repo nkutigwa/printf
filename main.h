@@ -13,4 +13,5 @@ void _printstr(char *s);
 void format_int(va_list list, int *printed);
 void format_string(va_list list, int *printed, char sr);
 void format_values(va_list list, const char *format, int *printed, int *count);
-#endif
+
+#endif /* _MAIN_H_ */
