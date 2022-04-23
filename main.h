@@ -1,5 +1,5 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#ifndef MAIN_H
+#define MAIN_H
 #include <stdarg.h>
 
 int _printf(const char *format, ...);
@@ -14,4 +14,4 @@ void format_int(va_list list, int *printed);
 void format_string(va_list list, int *printed, char sr);
 void format_values(va_list list, const char *format, int *printed, int *count);
 
-#endif /* _MAIN_H_ */
+#endif /* MAIN_H */
