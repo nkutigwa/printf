@@ -12,12 +12,10 @@ int main(void)
 {
 	/**_printf("This is a test: %z - %% - % - % c - \\ - \" - \' - %\n", 'A');
 	printf("This is a test: %z - %% - % - % c - \\ - \" - \' - %\n", 'A');**/
-
 	int n = _printf("%s\n", "");
 	int m = _printf("%r\n", "");
 
 	printf("%d, %d\n", n, m);
-
 	return (0);
 
 }
